@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: F8EDEB;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/23.0.1" fx:controller="com.example.sklep.controller.klient.PrzegladTowaruController">
+  <columnConstraints>
+      <ColumnConstraints halignment="CENTER" minWidth="100.0" prefWidth="100.0" />
+      <ColumnConstraints maxWidth="256.6000122070312" minWidth="10.0" prefWidth="230.0" />
+    <ColumnConstraints maxWidth="200.60001220703123" minWidth="10.0" prefWidth="170.0" />
+    <ColumnConstraints halignment="CENTER" minWidth="100.0" prefWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints minHeight="40.0" prefHeight="60.0" valignment="CENTER" />
+    <RowConstraints minHeight="10.0" prefHeight="340.0" valignment="CENTER" />
+  </rowConstraints>
+   <children>
+      <Button mnemonicParsing="false" onAction="#onBtnMenu" style="-fx-background-color: lightyellow; -fx-border-color: gray;" text="Menu">
+         <font>
+            <Font name="Bodoni MT Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button mnemonicParsing="false" text="Button" GridPane.columnIndex="2" GridPane.halignment="RIGHT" />
+      <TextField fx:id="inputSzukaj" maxWidth="-Infinity" prefWidth="341.0" GridPane.columnIndex="1" GridPane.columnSpan="2" />
+      <Button id="1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" mnemonicParsing="false" onAction="#onBtnSzukaj" prefHeight="25.0" prefWidth="60.0" style="-fx-background-color: lightyellow; -fx-border-color: grey;" text="Szukaj" GridPane.columnIndex="2" GridPane.halignment="RIGHT" GridPane.valignment="CENTER">
+         <font>
+            <Font name="Bodoni MT Bold" size="12.0" />
+         </font>
+      </Button>
+      <VBox layoutX="105.0" layoutY="88.0" maxHeight="-Infinity" minHeight="-Infinity" minWidth="-Infinity" nodeOrientation="LEFT_TO_RIGHT" prefHeight="340.0" prefWidth="209.0" style="-fx-background-color: lightyellow;" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <GridPane.margin>
+            <Insets />
+         </GridPane.margin>
+         <children>
+            <ImageView fitHeight="340.0" fitWidth="234.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../платье.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </VBox>
+      <VBox layoutX="105.0" layoutY="88.0" maxHeight="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="340.0" prefWidth="170.0" spacing="8.0" style="-fx-background-color: white;" GridPane.columnIndex="2" GridPane.rowIndex="1">
+         <GridPane.margin>
+            <Insets left="5.0" right="5.0" />
+         </GridPane.margin>
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="KRÓTKA SUKIENKA Z FALBANKAMI KOLEKCJA ZW" wrappingWidth="170.48170471191406">
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+            </Text>
+            <HBox nodeOrientation="LEFT_TO_RIGHT" prefHeight="26.0" prefWidth="179.0" spacing="5.0" style="-fx-background-color: white;">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="249,00 PLN">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Text>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <VBox.margin>
+                  <Insets left="5.0" top="10.0" />
+               </VBox.margin>
+            </HBox>
+            <Line endX="64.89286804199219" endY="-8.009672455955297E-5" startX="220.18576049804688" startY="0.0010437130695208907" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Jasnożółty | 2725/233/306">
+               <font>
+                  <Font name="Bodoni MT Bold Italic" size="12.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="5.0" />
+               </VBox.margin>
+            </Text>
+            <Button alignment="CENTER" mnemonicParsing="false" onAction="#onBtnDodaj" prefHeight="27.0" prefWidth="160.0" style="-fx-background-color: lightyellow; -fx-border-color: gray;" text="DODAJ" textAlignment="CENTER">
+               <font>
+                  <Font name="Bodoni MT Bold Italic" size="12.0" />
+               </font>
+            </Button>
+            <Label prefHeight="107.0" prefWidth="173.0" text="Krótka sukienka z okrągłym dekoltem i cienkimi ramiączkami. Ozdobne falbany z tego samego materiału. Rozkloszowany dół." wrapText="true" />
+         </children>
+         <padding>
+            <Insets left="5.0" top="5.0" />
+         </padding>
+      </VBox>
+      <VBox prefHeight="200.0" prefWidth="100.0" GridPane.rowIndex="1">
+         <children>
+            <VBox alignment="TOP_CENTER" prefHeight="160.0" prefWidth="95.0">
+               <children>
+                  <Hyperlink text="Sukienki">
+                     <font>
+                        <Font name="Bodoni MT Bold" size="12.0" />
+                     </font>
+                  </Hyperlink>
+                  <Hyperlink text="Topy">
+                     <font>
+                        <Font name="Bodoni MT Bold Italic" size="12.0" />
+                     </font>
+                  </Hyperlink>
+                  <Hyperlink text="T-Shirty" />
+                  <Hyperlink text="Spodnie">
+                     <font>
+                        <Font name="Bodoni MT Bold Italic" size="12.0" />
+                     </font>
+                  </Hyperlink>
+                  <Hyperlink text="Jeansy">
+                     <font>
+                        <Font name="Bodoni MT Bold" size="12.0" />
+                     </font>
+                  </Hyperlink>
+                  <Hyperlink layoutX="36.0" layoutY="106.0" text="Spodnice">
+                     <font>
+                        <Font name="Bodoni MT Bold" size="12.0" />
+                     </font>
+                  </Hyperlink>
+               </children>
+            </VBox>
+            <VBox alignment="TOP_CENTER" prefHeight="138.0" prefWidth="95.0">
+               <children>
+                  <Separator prefHeight="18.0" prefWidth="95.0" />
+                  <Hyperlink alignment="CENTER" prefHeight="24.0" prefWidth="100.0" text="Konto" />
+                  <Hyperlink alignment="CENTER" prefHeight="24.0" prefWidth="100.0" text="Pomoc" />
+                  <Hyperlink alignment="CENTER" prefHeight="24.0" prefWidth="100.0" text="Wyloguj sie" />
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+      <Hyperlink onAction="#onBtnKoszyk" style="-fx-background-color: lightyellow; -fx-border-color: gray;" text="Koszyk" GridPane.columnIndex="3" />
+   </children>
+</GridPane>
